@@ -32,6 +32,6 @@ const imagesList = images
     arr =>
       `<li class="gallery-list"><img class="gallery-img" src="${arr.url}" alt="${arr.alt}"></li>`
   )
-  .join();
+  .join('');
 
 listElm.insertAdjacentHTML('afterbegin', imagesList);
